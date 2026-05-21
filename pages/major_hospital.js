@@ -10,25 +10,37 @@ class HospitalPage {
     }
 
     async navigate() {
-        await this.page.goto('https://www.practo.com/', { waitUntil: 'domcontentloaded' });
+        await this.page.goto('https://www.practo.com/', { waitUntil: 'networkidle' });
     }
 
     async searchByLocation(city) {
-        await this.searchHospitalsLink.click();
-        await this.page.waitForTimeout(3000);
-        await this.locationInput.click();
-        await this.locationInput.press('Control+A');
-        await this.locationInput.press('Backspace');
-        await this.locationInput.type(city, { delay: 100 });
-        await this.page.waitForTimeout(2000);
+    //     await this.searchHospitalsLink.click();
+    //     // await this.page.waitForTimeout(3000);
+    //     await this.locationInput.click();
+    //     await this.locationInput.press('Control+A');
+    //     await this.locationInput.press('Backspace');
+    //     await this.locationInput.type(city, { delay: 100 });
+    //     // await this.page.waitForTimeout(2000);
 
-        if (await this.bangaloreOption.first().count() > 0) {
-            await this.bangaloreOption.first().click();
-        } else {
-            await this.page.keyboard.press('ArrowDown');
-            await this.page.keyboard.press('Enter');
-        }
-        await this.page.waitForTimeout(2000);
+    //     if (await this.bangaloreOption.first().count() > 0) {
+    //         await this.bangaloreOption.first().click();
+    //     } else {
+    //         await this.page.keyboard.press('ArrowDown');
+    //         await this.page.keyboard.press('Enter');
+    //     }
+    //     await this.page.waitForTimeout(2000);
+    // }
+    await this.searchHospitalsLink.click();
+    await this.locationInput.waitFor({state:'visible'})
+    await this.locationInput.click();
+    await this.locationInput.press('Control+A');
+    await this.locationInput.press('Backspace');
+    await this.locationInput.fill(city);
+    await this.page.waitForLoadState('networkidle');
+    const cityOption = this.page.locator(`text=${city}`).first();
+    await cityOption.waitFor({state:'visible',timeout:40000});
+    await cityOption.click();
+
     }
 
     async searchForHospital(keyword) {

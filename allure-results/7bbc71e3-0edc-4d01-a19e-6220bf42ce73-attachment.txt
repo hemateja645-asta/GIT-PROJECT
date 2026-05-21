@@ -1,0 +1,14 @@
+[
+  'Bangalore', 'Delhi',
+  'Mumbai',    'Chennai',
+  'Hyderabad', 'Kolkata',
+  'Pune',      'Ahmedabad'
+]
+Bangalore
+Delhi
+Mumbai
+Chennai
+Hyderabad
+Kolkata
+Pune
+Ahmedabad

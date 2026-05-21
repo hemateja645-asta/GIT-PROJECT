@@ -1,8 +1,6 @@
 class CorporatePage {
     constructor(page) {
         this.page = page;
-        this.forCorporatesLink = page.getByText('For Corporates').first();
-        this.healthWellnessLink = page.getByText('Health & Wellness Plans');
         this.nameInput = page.getByRole('textbox', { name: 'Name', exact: true });
         this.orgNameInput = page.getByRole('textbox', { name: 'Organization Name', exact: true });
         this.contactInput = page.getByRole('textbox', { name: 'Contact Number' });
@@ -18,8 +16,11 @@ class CorporatePage {
     }
 
     async fillCorporateForm(name, orgName, contact, email, orgSize, interestReason) {
-        await this.forCorporatesLink.click();
-        await this.healthWellnessLink.click();
+        await this.page.goto('https://www.practo.com/plus/corporate',{
+            waitUntil: 'domcontentloaded'
+        });
+        
+        await this.nameInput.waitFor({state:'visible',timeout:60000});
         await this.nameInput.fill(name);
         await this.orgNameInput.fill(orgName);
         await this.contactInput.fill(contact);

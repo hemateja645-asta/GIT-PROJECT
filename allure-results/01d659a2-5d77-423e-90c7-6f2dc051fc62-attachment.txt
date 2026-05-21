@@ -1,0 +1,66 @@
+
+==============================
+Total Hospitals Loaded : 20
+==============================
+
+------------------------------
+Hospital Name : Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)
+Rating        : 4
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Manipal Hospitals
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Koshys Hospital
+Rating        : 4
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Motherhood Hospital
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Sagar Hospitals
+Rating        : 4
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Apollo Cradle & Children’s Hospital
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Cloudnine Hospital - Old Airport Road
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Cloudnine Hospital
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Manipal Hospital, Millers Road ( Vikram Hospitals )
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+------------------------------
+Hospital Name : Cloudnine Hospital - Whitefield
+Rating        : 4.5
+Status        : Open 24x7
+Parking       : Available
+
+========= TEST COMPLETED =========

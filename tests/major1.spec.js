@@ -7,7 +7,7 @@ const { LabTestsPage } = require('../pages/labtest_major.js');
 const { CorporatePage } = require('../pages/corporate_page.js');
 import * as XLSX from "xlsx";
 
-test('Hospitals with rating > 3.5, Open 24x7 and Parking', async ({ page }) => {
+test('  @hHospitals with rating > 3.5, Open 24x7 and Parking @hospital', async ({ page }) => {
     test.setTimeout(180000);
     const hospitalPage = new HospitalPage(page);
 
@@ -107,7 +107,7 @@ test('Hospitals with rating > 3.5, Open 24x7 and Parking', async ({ page }) => {
     console.log('\n========= TEST COMPLETED =========');
 });
 
-test('Robust Top Cities Scraper', async ({ page }) => {
+test('Robust Top Cities Scraper  @top cities', async ({ page }) => {
     const labPage = new LabTestsPage(page);
     await labPage.navigateToTests();
 
@@ -118,7 +118,7 @@ test('Robust Top Cities Scraper', async ({ page }) => {
     }
 });
 
-test('find hospital', async ({ page }) => {
+test('find hospital @form', async ({ page }) => {
     const corporatePage = new CorporatePage(page);
 
     await corporatePage.navigate();

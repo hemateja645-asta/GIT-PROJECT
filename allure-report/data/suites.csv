@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","10607","Robust Top Cities Scraper","chromium","2026-05-19","passed","2026-05-19","","major1.spec.js","",""
-"","149299","Hospitals with rating > 3.5, Open 24x7 and Parking","chromium","2026-05-19","passed","2026-05-19","","major1.spec.js","",""
-"","6335","find hospital","chromium","2026-05-19","passed","2026-05-19","","major1.spec.js","",""
+"","120752","Hospitals with rating > 3.5, Open 24x7 and Parking","chromium","2026-05-21","passed","2026-05-21","","major1.spec.js","",""
+"","6845","find hospital","chromium","2026-05-21","passed","2026-05-21","","major1.spec.js","",""
+"","11752","Robust Top Cities Scraper","chromium","2026-05-21","passed","2026-05-21","","major1.spec.js","",""
